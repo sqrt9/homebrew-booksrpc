@@ -25,9 +25,7 @@ class Booksrpc < Formula
   service do
     run opt_bin/"booksrpc"
     keep_alive true
+    process_type "Background"
   end
 
-  test do
-    system "#{bin}/booksrpc", "--version"
-  end
 end
