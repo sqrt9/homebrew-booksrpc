@@ -25,7 +25,9 @@ class Booksrpc < Formula
   service do
     run opt_bin/"booksrpc"
     keep_alive true
-    process_type "Background"
+    stdin_path "/dev/null"
+    stdout_path var/"log/booksrpc.log"
+    stderr_path var/"log/booksrpc.error.log"
   end
 
 end
