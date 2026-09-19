@@ -5,12 +5,12 @@ class Booksrpc < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sqrt9/BooksRPC/releases/download/v0.2.0/booksrpc-aarch64"
-      sha256 "c58418c1519b404dfc8e2dfefbebdeee214c661ec63b57c5f001c113add804c3"
+      url "https://github.com/sqrt9/BooksRPC/releases/download/v0.3.0/booksrpc-aarch64"
+      sha256 "e415cc8284e54ee13c469e2d8493aa1e65c174569d903922a4d9d4475fefc037"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sqrt9/BooksRPC/releases/download/v0.2.0/booksrpc-x86_64"
-      sha256 "5c8438499486db25fbb6aa0599590b3fdf842c490dfd6ff3b6a515efd65b223e"
+      url "https://github.com/sqrt9/BooksRPC/releases/download/v0.3.0/booksrpc-x86_64"
+      sha256 "6b904b7b17b928a8a4f51b125e70b6ee121e0f36790245a625af12fa9776c038"
     end
   end
 
