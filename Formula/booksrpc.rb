@@ -20,17 +20,10 @@ class Booksrpc < Formula
     else
       bin.install "booksrpc-x86_64" => "booksrpc"
     end
-
-    (libexec/"booksrpc.sh").write <<~EOS
-      #!/bin/bash
-      exec "#{opt_bin}/booksrpc"
-    EOS
-    (libexec/"booksrpc.sh").chmod 0755
-  
   end
 
   service do
-    run [libexec/"booksrpc.sh"]
+    run opt_bin/"booksrpc"
     keep_alive true
   end
 
