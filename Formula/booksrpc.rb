@@ -30,8 +30,4 @@ class Booksrpc < Formula
     error_log_path var/"booksrpc/booksrpc.log"
   end
 
-  post_install do
-    (var/"booksrpc").mkpath
-  end
-
 end
