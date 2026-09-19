@@ -25,6 +25,13 @@ class Booksrpc < Formula
   service do
     run opt_bin/"booksrpc"
     keep_alive true
+    environment_variables PATH: std_service_path_env
+    working_dir var/"booksrpc"
+    error_log_path var/"booksrpc/booksrpc.log"
+  end
+
+  post_install do
+    (var/"booksrpc").mkpath
   end
 
 end
